@@ -43,7 +43,7 @@ local plugins = {
         "intelephense",
         "rust-analyzer",
         "php-cs-fixer",
-        "deno",
+        "rome",
       },
     },
   },
@@ -85,6 +85,20 @@ local plugins = {
          performance_mode = false,    -- Disable "Performance Mode" on all buffers.
       })
     end,
+  },
+
+  {
+    name = "tabby",
+    dir = "~/tabby/clients/vim",
+    enabled = true,
+    lazy = false,
+  },
+
+
+  {
+    "github/copilot.vim",
+    opts = overrides.copilot,
+    lazy = false,
   },
 
   -- To make a plugin not be loaded

@@ -5,8 +5,8 @@ local M = {}
 local highlights = require "custom.highlights"
 
 M.ui = {
-  theme = "onedark",
-  theme_toggle = { "onedark", "one_light" },
+  theme = "penumbra_dark",
+  theme_toggle = { "penumbra_dark", "one_light" },
 
   hl_override = highlights.override,
   hl_add = highlights.add,
@@ -16,5 +16,11 @@ M.plugins = "custom.plugins"
 
 -- check core.mappings for table structure
 M.mappings = require "custom.mappings"
+
+vim.g.tabby_server_url="http://140.210.223.241:10002"
+vim.g.tabby_agent_logs="debug"
+
+vim.api.nvim_set_keymap("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
+vim.g.copilot_no_tab_map = true
 
 return M
