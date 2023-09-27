@@ -44,6 +44,8 @@ local plugins = {
         "rust-analyzer",
         "php-cs-fixer",
         "rome",
+        "pyright",
+	"asm-lsp",
       },
     },
   },
