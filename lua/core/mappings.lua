@@ -283,7 +283,7 @@ M.nvterm = {
 
   t = {
     -- toggle in terminal mode
-    ["<A-i>"] = {
+    ["<A-m>"] = {
       function()
         require("nvterm.terminal").toggle "float"
       end,
